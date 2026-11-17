@@ -162,7 +162,7 @@ Milestone: Day {day_number} — {day_title}
 """
 
     response = await client.beta.chat.completions.parse(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
